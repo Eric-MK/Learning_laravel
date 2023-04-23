@@ -39,3 +39,7 @@ Route::get('/search', function (Request $request) {
 
 });
 
+Route::get('/dbconn', function () {
+   return view('dbconn');
+});
+
