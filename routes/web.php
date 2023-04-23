@@ -13,7 +13,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/listings/{id}', function ($id) {
+Route::get('/list/{id}', function ($id) {
 
     return view('list', [
         'listing' => Listing::find($id)

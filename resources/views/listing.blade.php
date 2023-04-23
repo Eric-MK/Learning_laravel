@@ -4,7 +4,10 @@
 @unless(count($listings) == 0) {{-- if not equals to zero execute
  unless is not zero execute--}}
 @foreach($listings as $listing)
- <h2>{{ $listing['title'] }}</h2>
+ <h2>
+   <a href="/list/{{ $listing['id'] }} "> {{ $listing['title'] }}
+   </a>
+</h2>
  <p>{{ $listing['description'] }}</p>
  @endforeach
 
