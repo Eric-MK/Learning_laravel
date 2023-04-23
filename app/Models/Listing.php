@@ -31,6 +31,19 @@ class Listing {
         ]
         ];
     }
+
+
+    public static function find($id)
+    {
+        $listings = self::all(); //self is often used to access static properties and methods of the current class
+
+        foreach($listings as $listing)
+        {
+            if ($listing[$id] == $id)  {
+                return $listing;
+            }
+        }
+    }
 }
 
 

@@ -5,12 +5,20 @@ use Illuminate\Http\Request;
 use App\Models\Listing; /* use model Listing */
 
 
-
+//All listing
 Route::get('/', function () {
     return view('listing', [
       'heading' => 'Latest Listing',
       'listings' => Listing::all()//access the static function of the model
     ]);
+});
+
+Route::get('/listings/{id}', function ($id) {
+
+    return view('list', [
+        'listing' => Listing::find($id)
+    ]);
+
 });
 
 Route::get('/hello', function () {
