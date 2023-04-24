@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('location');
             $table->string('email');
-            $table->string('website');
+            $table->string('website')->nullable();//making the column nullable
             $table->longText('description');//more characters
             $table->timestamps();
         });

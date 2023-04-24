@@ -6,3 +6,10 @@
 
 *php artisan make:model "model_name"* => creating model
 
+# laravel
+
+By default, Laravel assumes that the table name for a model is the plural form of the model's name, converted to snake case. For example:
+
+A *Listing model* would use the *listings* table.
+A *User model* would use the *users* table.
+An *ImageGallery* model would use the *image_galleries* table.
