@@ -9,14 +9,14 @@ use App\Models\Listing; /* use model Listing */
 Route::get('/', function () {
     return view('listing', [
       'heading' => 'Latest Listing',
-      'listings' => Listing::all()//access the static function of the model
+      'listings' => Listing::all()//is part of php query
     ]);
 });
 
 Route::get('/list/{id}', function ($id) {
 
     return view('list', [
-        'listing' => Listing::find($id)
+        'listing' => Listing::find($id)//same
     ]);
 
 });
