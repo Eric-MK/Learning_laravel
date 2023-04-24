@@ -9,7 +9,7 @@ use App\Models\Listing; /* use model Listing */
 Route::get('/', function () {
     return view('listing', [
       'heading' => 'Latest Listing',
-      'listings' => Listing::all()//is part of php query
+      'listings' => Listing::all()//is part of php query retuns an array of listings
     ]);
 });
 
