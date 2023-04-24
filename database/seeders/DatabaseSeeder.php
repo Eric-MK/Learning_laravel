@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
          \App\Models\User::factory(5)->create();
 
          Listing::create([
-            'title' => 'Laravel Senior Developer',
+            'title' => 'Laravel Senior Developer',//name of coloumns should be the same to the ones in database
             'tags' => 'laravel, javascript',
             'company' => 'Acem Corp',
             'location' => 'Boston, MA',
