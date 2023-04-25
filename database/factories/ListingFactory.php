@@ -17,7 +17,14 @@ class ListingFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => fake()->sentence(),
+            'tags'  => 'laravel, api, backend',
+            'company' => fake()->company(),
+            'email' => fake()->companyEmail(),
+            'website' => fake()->url(),
+            'location' => fake()->city(),
+            'description' => fake()->paragraph(5),//a randomly generated paragraph containing 5 sentences.
+
         ];
     }
 }

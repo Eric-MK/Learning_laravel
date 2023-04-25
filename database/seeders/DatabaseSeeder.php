@@ -15,9 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-         \App\Models\User::factory(5)->create();
+         \App\Models\User::factory(5)->create();//specifies the model to be used
 
-         Listing::create([
+         Listing::factory(6)->create();//factory to create six dummies which calls the listing model which calls the listing factory
+
+         /* Listing::create([
             'title' => 'Laravel Senior Developer',//name of coloumns should be the same to the ones in database
             'tags' => 'laravel, javascript',
             'company' => 'Acem Corp',
@@ -37,7 +39,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error dolores nulla vitae maxime nihil totam dolor, consectetur ducimus placeat? Esse culpa tempora tempore eos earum excepturi cum, iste aliquam et.'
 
 
-         ]);
+         ]); */
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
