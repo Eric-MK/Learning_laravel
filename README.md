@@ -5,7 +5,8 @@
 *php artisan migrate:refresh --seed* =>  refreshes the database schema by rolling back all migrations and then re-running them. Additionally, it also runs the database seeders to populate the database with initial data.
 
 *php artisan make:model "model_name"* => creating model
-*php artisan make:factory "factory_name"* => creating model
+
+*php artisan make:factory "factory_name"* => creating factory
 
 
 # laravel
